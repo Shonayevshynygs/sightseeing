@@ -13,7 +13,7 @@ public class MockAPI {
         Javalin app = Javalin.create()
                 .enableDebugLogging()
                 .port(6789);
-
+        app.enableCorsForAllOrigins();
         app.routes(() -> {
             crud("/tickets/:id", new MockTicketController());
             crud("/clients/:id", new MockClientController());
