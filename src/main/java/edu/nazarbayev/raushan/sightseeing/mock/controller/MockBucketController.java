@@ -15,9 +15,9 @@ public class MockBucketController implements CrudHandler {
     public static List<Bucket> collection = new ArrayList<>();
 
     static {
-        Bucket bucket1 = new Bucket();
-        Bucket bucket2 = new Bucket();
-        Bucket bucket3 = new Bucket();
+        Bucket bucket1 = new Bucket(1);
+        Bucket bucket2 = new Bucket(2);
+        Bucket bucket3 = new Bucket(3);
 
         collection.add(bucket1);
         collection.add(bucket2);

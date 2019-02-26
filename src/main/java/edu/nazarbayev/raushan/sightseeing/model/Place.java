@@ -92,6 +92,13 @@ public class Place {
         this.info = info;
     }
 
+    public Place(long id, String name, Coordinates coordinates, String info) {
+        this.id = id;
+        this.name = name;
+        this.coordinates = coordinates;
+        this.info = info;
+    }
+
     public void setInfo(String info) {
         this.info = info;
     }

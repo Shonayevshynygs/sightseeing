@@ -13,9 +13,9 @@ public class MockTicketController implements CrudHandler {
     public static List<Ticket> collection = new ArrayList<>();
 
     static {
-        Ticket ticket1 = new Ticket(MockPlaceController.collection.get(0), 300);
-        Ticket ticket2 = new Ticket(MockPlaceController.collection.get(1), 400);
-        Ticket ticket3 = new Ticket(MockPlaceController.collection.get(2), 500);
+        Ticket ticket1 = new Ticket(1,MockPlaceController.collection.get(0), 300);
+        Ticket ticket2 = new Ticket(2,MockPlaceController.collection.get(1), 400);
+        Ticket ticket3 = new Ticket(3,MockPlaceController.collection.get(2), 500);
 
         collection.add(ticket1);
         collection.add(ticket2);

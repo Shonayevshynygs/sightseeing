@@ -72,6 +72,13 @@ public class Ticket {
         this.price = price;
     }
 
+    public Ticket(long id, Place place, long price) {
+        this.id = id;
+        this.place = place;
+        this.price = price;
+    }
+
+
     public Ticket() {
     }
 }

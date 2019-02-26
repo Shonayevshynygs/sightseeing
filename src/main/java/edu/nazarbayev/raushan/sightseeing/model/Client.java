@@ -37,6 +37,15 @@ public class Client {
         this.password = password;
         this.bucket = bucket;
     }
+    public Client(long id,String firstName, String lastName, long balance, String email, String password, Bucket bucket) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.balance = balance;
+        this.email = email;
+        this.password = password;
+        this.bucket = bucket;
+    }
 
     public Client() {
     }

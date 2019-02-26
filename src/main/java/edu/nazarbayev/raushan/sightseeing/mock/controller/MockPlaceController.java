@@ -14,9 +14,9 @@ public class MockPlaceController implements CrudHandler  {
     public static List<Place> collection = new ArrayList<>();
 
     static {
-        Place place1 = new Place("Shymbulak", new Coordinates(76.45, 23.43), "Ski resort");
-        Place place2 = new Place("Medeo", new Coordinates(76.45, 23.43), "Skating place");
-        Place place3 = new Place("Zoo", new Coordinates(76.45, 23.43), "Animals and stuff");
+        Place place1 = new Place(1,"Shymbulak", new Coordinates(76.45, 23.43), "Ski resort");
+        Place place2 = new Place(2,"Medeo", new Coordinates(76.45, 23.43), "Skating place");
+        Place place3 = new Place(3,"Zoo", new Coordinates(76.45, 23.43), "Animals and stuff");
 
         collection.add(place1);
         collection.add(place2);

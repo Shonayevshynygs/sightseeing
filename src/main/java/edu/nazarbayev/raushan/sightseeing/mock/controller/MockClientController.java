@@ -12,9 +12,9 @@ public class MockClientController implements CrudHandler  {
     public static List<Client> collection = new ArrayList<>();
 
     static {
-        Client client1 = new Client("Doe", "John", 2000, "johndoe@example.com", "password", MockBucketController.collection.get(0));
-        Client client2 = new Client("Doe", "Jane", 3000, "janedoe@example.com", "password", MockBucketController.collection.get(1));
-        Client client3 = new Client("Doe", "Johny", 4000, "johnydoe@example.com", "password", MockBucketController.collection.get(2));
+        Client client1 = new Client(1,"Doe", "John", 2000, "johndoe@example.com", "password", MockBucketController.collection.get(0));
+        Client client2 = new Client(2,"Doe", "Jane", 3000, "janedoe@example.com", "password", MockBucketController.collection.get(1));
+        Client client3 = new Client(3,"Doe", "Johny", 4000, "johnydoe@example.com", "password", MockBucketController.collection.get(2));
 
         collection.add(client1);
         collection.add(client2);
