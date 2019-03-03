@@ -18,6 +18,9 @@ public class Place {
     @Column(name = "info", nullable = true)
     private String info;
 
+    @Column(name = "description", nullable = true)
+    private String description;
+
 //    public Ticket getTicket() {
 //        return ticket;
 //    }
@@ -59,6 +62,14 @@ public class Place {
         return id;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public void setId(long id) {
         this.id = id;
     }
@@ -92,11 +103,12 @@ public class Place {
         this.info = info;
     }
 
-    public Place(long id, String name, Coordinates coordinates, String info) {
+    public Place(long id, String name, Coordinates coordinates, String info, String description) {
         this.id = id;
         this.name = name;
         this.coordinates = coordinates;
         this.info = info;
+        this.description =description;
     }
 
     public void setInfo(String info) {
